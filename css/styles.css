@@ -19,18 +19,9 @@ img {
 
 /* Style rules for mobile viewport */
 
-/* Hide tab-desk class */
-
-.tab-desk {
-    display: none;
-}
-
 /* Style rules for header content */
 header {
-    align-items: center;
     background-color: #ffebd5;
-    text-align: center;
-    font-size: 1.5em;
 }
 
 /* Style rules for top_bar area */
@@ -39,28 +30,31 @@ header {
     justify-content: space-around;
     background-color: #e09845;
     position: fixed;
+    align-items: center;
     top: 0;
     width: 100%;
+    padding: 10px 0px;
 }
 
-.logo {
-    width: 35px;
+.logo a img {
+    width: 160px;
+    height: 48px;
 }
 
 .social_nav ul {
-    list-style-type: none;
     display: flex;
-    gap: 10px;
+    list-style-type: none;
+    gap: 5px;
 }
 
 .social_nav li a img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 /* Style rules for navigation area */
 nav {
-    margin-top: 35px;
+    margin-top: 67px;
 }
 
 .links_nav {
@@ -70,9 +64,14 @@ nav {
 .links_nav ul {
     list-style-type: none;
     text-align: center;
+    font-size: 1.5em;
 }
 
-.links_nav li a {
+.links_nav ul li {
+    border-top: 1px solid #e09845;
+}
+
+.links_nav ul li a {
     color: #000000;
     text-align: center;
     text-decoration: none;
@@ -80,14 +79,10 @@ nav {
     transition: all 0.3s ease 0s;
 }
 
-.links_nav li a:hover {
+.links_nav ul li a:hover {
     color: #04AA6D;
 }
 
-.active {
-    background-color: #04AA6D;
-    color: #fff;
-}
 
 
 
@@ -167,12 +162,26 @@ main p {
 
 /* Style rules for footer content */
 footer {
+    background-color: #e09845;
+    padding: 1em;
     text-align: center;
     font-size: 0.65em;
     clear: left;
 }
 
-footer a {
+.footer-social_nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-social_nav li a img {
+    width: 20px;
+    height: 20px;
+}
+
+.copyright-contactus {
     color: #4645a8;
     text-decoration: none;
 }
@@ -189,25 +198,14 @@ footer a {
         display: none;
     }
 
-    /* Tablet Viewport: Style rule for header content */
-    span.tab-desk {
-        display: inline;
+    /* Tablet Viewport: Style rule for nav content */
+    .links_nav ul {
+        display: flex;
     }
 
     nav li a {
+        font-size: 0.2em;
         padding: 0.25em 0.5em;
-    }
-
-    /* Tablet Viewport: Style rules for nav area */
-    nav li {
-        border-top: none;
-        border-right: 1px solid #e5e9fc;
-        display: inline-block;
-        font-size: 1.5em;
-    }
-
-    nav li:last-child {
-        border-right: none;
     }
 
     /* Tablet Viewport: Style rule for map */
@@ -242,15 +240,6 @@ footer a {
 
     main h3 {
         font-size: 1.5em;
-    }
-
-    #piano, #guitar, #violin {
-        width: 29%;
-        float: left;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 2%;
-        margin-right: 2%;
     }
 
     /* Media Query for Print */
