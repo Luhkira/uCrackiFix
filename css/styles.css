@@ -14,7 +14,6 @@ body, header, nav, main, footer, img, h1, ul {
 /* Style rule for images */
 img {
     max-width: 100%;
-    display: block;
 }
 
 /* Style rules for mobile viewport */
@@ -74,77 +73,20 @@ header {
     color: #04AA6D;
 }
 
-
-
-
-
-
-
-
-
 /* Style rules for main content */
 main {
-    padding: 2%;
+    margin: 4%;
+    padding:25%;
     background-color: #ffffff;
     overflow: auto;
+    border: 2px solid #000;
 }
 
 main p {
     font-size: 1.25em;
 }
 
-.action {
-    font-size: 1.25em;
-    color: #373684;
-    font-weight: bold;
-}
-
-/* Style rules for lessons content */
-#piano, #guitar, #violin {
-    margin: 0 2%;
-}
-
-#info {
-    clear: left;
-    background-color: #c0caf7;
-    padding: 1% 2%;
-}
-
-#info ul {
-    margin-left: 10%;
-}
-
-.round {
-    border-radius: 8px;
-}
-
 /* Style rules for contact content */
-#contact {
-    text-align: center;
-}
-
-.tel-link {
-    background-color: #373684;
-    padding: 2%;
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.tel-link a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    display: block;
-}
-
-#contact .email-link {
-    color: #4645a8;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .map {
     border: 5px solid #373684;
     width: 95%;
