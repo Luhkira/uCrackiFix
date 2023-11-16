@@ -25,7 +25,7 @@ img {
 }
 
 /* Style rules for top_bar content */
-.top_bar {
+.top-bar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +66,7 @@ nav ul li a:hover {
 
 /* Style rules for main content */
 main {
-    margin: 4%;
+    margin: 2%;
     border: 2px solid #000;
     padding: 5%;
     margin-bottom: px;
@@ -102,7 +102,7 @@ footer {
     height: 50px;
 }
 
-.footer-social_nav ul {
+.footer-social-nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -110,12 +110,12 @@ footer {
     padding: 0.9em;
 }
 
-.footer-social_nav li a img {
+.footer-social-nav li a img {
     width: 25px;
     height: 25px;
 }
 
-.footer-social_nav li a p {
+.footer-social-nav li a p {
     display: none;
 }
 
@@ -133,7 +133,7 @@ footer {
 @media screen and (min-width: 550px), print {
 
     /* Tablet Viewport: Style rule for header content */
-    .top_bar {
+    .top-bar {
         padding-top: 1em;
         padding-bottom: 0.4em;
         border-bottom: 1px solid #009FD9;
@@ -146,11 +146,12 @@ footer {
 
     /* Tablet Viewport: Style rule for nav content */
     nav {
+        padding: 0.5em;
+        background-color: #ffffff;
         position: -webkit-sticky; /* Safari compatibility*/
         position: sticky;
-        background-color: #ffffff;
-        padding-top: 0.5em;
         top: 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     }
 
     nav ul {
@@ -193,7 +194,7 @@ footer {
 @media screen and (min-width: 930px), print {
 
     /* Desktop Viewport: Style rule for header content*/
-    .top_bar {
+    .top-bar {
         padding-top: 0.6em;
         padding-bottom: 0em;
         justify-content:flex-start;
@@ -227,24 +228,24 @@ footer {
         align-items: center;
     }
 
-    .footer-social_nav ul {
+    .footer-social-nav ul {
         gap: 1em;
         flex-direction: column;
         align-items: stretch;
     }
 
-    .footer-social_nav ul li a {
+    .footer-social-nav ul li a {
         display: flex;
         align-items: center;
         text-decoration: none;
     }
 
-    .footer-social_nav ul li a img {
+    .footer-social-nav ul li a img {
         width: 30px;
         height: 30px;
     }
 
-    .footer-social_nav ul li a p {
+    .footer-social-nav ul li a p {
         display: inline-block;
         margin: 0;
         margin-left: 10px;
