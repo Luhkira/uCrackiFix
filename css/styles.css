@@ -93,9 +93,13 @@ footer {
     padding: 1em;
 }
 
+.footer-logo p {
+    display: none;
+}
+
 .footer-logo a img {
-    width: 288px;
-    height: 68px;
+    width: 216px;
+    height: 50px;
 }
 
 .footer-social_nav ul {
@@ -167,7 +171,15 @@ footer {
     nav ul li a:hover {
         padding-bottom: 5px;
         color: #0075a0;
-        border-bottom: 2px solid #0075a0;
+        border-bottom: 2px solid #009FD9;
+    }
+
+    .footer-logo p {
+        display: block;
+        margin: 5px auto;
+        font-size: 14px;
+        max-width: 216px;
+        text-align: center;
     }
 
     /* Tablet Viewport: Style rule for map */
