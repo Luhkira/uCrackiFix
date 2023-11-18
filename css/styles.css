@@ -11,8 +11,12 @@ body, header, nav, main, footer, img, h1, ul {
     border: 0;
 }
 
-/* Style rules for mobile viewport */
+/* Style rule for box sizing applies to all elements */  
+* {  
+    box-sizing: border-box; 
+  }
 
+/* Style rules for mobile viewport */
 /* Style rules for body content */
 body {
     font-family: 'Poppins', sans-serif;
@@ -22,6 +26,7 @@ body {
 /* Style rule for images */
 img {
     max-width: 100%;
+    display: block;
 }
 
 /* Style rules for top_bar content */
@@ -29,8 +34,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 0.8em;
-    padding-bottom: 0.4em;
+    padding-top: 1.2em;
+    padding-bottom: 0.8em;
     border-bottom: 2px solid #009FD9;
 }
 
@@ -58,7 +63,6 @@ nav ul li a {
     font-weight: 300;
     font-size: clamp(18px, 8vw, 20px);
     transition: all 0.3s ease 0s;
-    
 }
 
 nav ul li a:hover {
@@ -70,7 +74,7 @@ main {
     color: #323232;
 }
 
-/* Style rules for first div welcome content*/
+/* Style rules for first div - welcome content*/
 .welcome {
     display: flex;
     flex-direction: column;
@@ -85,6 +89,7 @@ main {
     width: 300px;
 }
 
+/* Style rules for welcome "send your device" button */
 .wc-button {
     width: 10.5em;
     height: 3em;
@@ -106,12 +111,13 @@ main {
     font-weight:500;
 }
 
+/* Style rules for welcome image */
 .wc-img img {
     height: 100%;
     width: 100%;
 }
 
-/* Style rules for second div common issues content */
+/* Style rules for second div - common issues content */
 .common-issues {
     padding: 3em 2em;
     padding-bottom: 0;
@@ -126,6 +132,7 @@ main {
     text-align: center;
 }
 
+/* Style rules for cellphone issues container */
 .cellphone-issues {
     display: flex;
     flex-direction: column;
@@ -137,7 +144,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 2em;
 }
 
 .cellphone-issues img {
@@ -152,7 +159,7 @@ main {
     font-weight: 400;
 }
 
-/* Style rules for third div promo content */
+/* Style rules for third div - promo content */
 .promo {
     display: flex;
     flex-direction: column;
@@ -169,6 +176,7 @@ main {
     overflow: hidden;
 }
 
+/* Style rules for promo wrap content */
 .promo-txt {
     text-align: center;
     margin: 2em;
@@ -183,6 +191,7 @@ main {
     display: block;
 }
 
+/* Style rules for promo "send your device" button */
 .promo-btn {
     width: 10.5em;
     height: 3em;
@@ -261,6 +270,12 @@ footer {
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
+    /* Tablet Viewport: Style rule for map */
+    .map {
+        width: 500px;
+        height: 450px;
+    }
+
     /* Tablet Viewport: Style rule for header content */
     .top-bar {
         padding-top: 1em;
@@ -279,6 +294,7 @@ footer {
         background-color: #ffffff;
         position: -webkit-sticky; /* Safari compatibility*/
         position: sticky;
+        z-index: 1;
         top: 0;
         box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     }
@@ -297,11 +313,33 @@ footer {
         white-space: nowrap;
         font-size: clamp(12px, 2.5vw, 17px);
     }
-    
+
     nav ul li a:hover {
         padding-bottom: 5px;
         color: #0075a0;
         border-bottom: 2px solid #009FD9;
+    }
+
+    /* Tablet Viewport: Style rules for welcome container */
+    .welcome {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* Tablet Viewport: Style rules for welcome image */
+    .wc-img {
+        width: 50%;
+    }
+
+    /* Tablet Viewport: Style rules for promo container */
+    .promo {
+        padding: 4em 7em;
+    }
+
+    /* Tablet Viewport: Style rule for footer content */
+    .footer-logo a img {
+        width: 288px;
+        height: 68px;
     }
 
     .footer-logo p {
@@ -311,28 +349,23 @@ footer {
         max-width: 216px;
         text-align: center;
     }
-
-    /* Tablet Viewport: Style rule for map */
-    .map {
-        width: 500px;
-        height: 450px;
-    }
 }
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 930px), print {
+@media screen and (min-width: 960px), print {
 
     /* Desktop Viewport: Style rule for header content*/
     .top-bar {
-        padding-top: 0.6em;
-        padding-bottom: 0em;
+        padding-top: 0.8em;
+        padding-bottom: 0.3em;
         justify-content:flex-start;
     }
 
     .logo a img {
-        width: 378px;
-        height: 88px;
-        padding-left: 10em;
+        width: 360px;
+        height: 84px;
+        padding-left: 6em;
+        box-sizing: content-box;
     }
 
     /* Desktop Viewport: Style rules for nav content */
@@ -340,9 +373,55 @@ footer {
         max-width: 70em;
     }
 
-    /* Desktop Viewport: Style rules for main content */
-    /*main {
-        height: 100em;
+    /* Desktop Viewport: Style rules for welcome wrap content */
+    .welcome {
+        padding-left: 5em;
+    }
+
+    .welcome-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wc-heading h1 {
+        width: 450px;
+        font-size: 46px;
+    }
+
+    .wc-img img {
+        width: 75%;
+    }
+
+    /* Desktop Viewport: Style rules for common issues area */
+    .common-issues {
+        padding-top: 5em;
+        padding-bottom: 2em;
+    }
+
+    .common-issues-heading {
+        padding-bottom: 5em;
+    }
+
+    .common-issues-heading h1 {
+        font-size: 46px;
+    }
+
+    .cellphone-issues {
+        flex-direction: row;
+    }
+
+    #cell-issues img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Desktop Viewport: Style rules for common issues area */
+    .promo {
+        padding-top: 6em;
+        padding-bottom: 5em;
+        padding-left: 20em;
+        padding-right: 20em;
     }
 
     /* Style rules for footer content */
