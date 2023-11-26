@@ -1,0 +1,39 @@
+/*
+ * File Name:   prices-styles.css
+ * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:      COP 2822C at Valencia College
+ * Professor:   David Stendel 
+ * Description: This is the CSS file for the prices page.
+ * Date:        11/25/2023
+ */
+
+/* Style Rules For Prices Page */
+/* Style Rules For Prices Table */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid #373684;
+}
+  
+table, tr, th, td {
+    border-collapse: collapse;
+    padding: 2%;
+}
+  
+caption {
+    font-size: 2em;
+    padding: 2%;
+    margin-top: 2%;
+}
+  
+th, td {
+  border: 1px solid #a1d0ff;
+}
+
+td {
+  text-align: center;
+}
+
+tr {
+  background-color: #fff;
+}

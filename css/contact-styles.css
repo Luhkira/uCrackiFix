@@ -1,0 +1,25 @@
+/*
+ * File Name:   contact-styles.css
+ * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:      COP 2822C at Valencia College
+ * Professor:   David Stendel 
+ * Description: This is the CSS file for the contact page.
+ * Date:        11/25/2023
+ */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form {
+    width: 40%;
+    padding: 20px;
+    border: 1px solid black;
+        }
+
+.map {
+    width: 50%;
+    height: 400px;
+        }

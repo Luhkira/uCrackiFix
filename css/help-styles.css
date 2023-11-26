@@ -1,0 +1,33 @@
+/*
+ * File Name:   help-styles.css
+ * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:      COP 2822C at Valencia College
+ * Professor:   David Stendel 
+ * Description: This is the CSS file for the help page.
+ * Date:        11/25/2023
+ */
+
+/* Style Rules for Boxes */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box {
+    width: 600px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid lightblue;
+    box-shadow: 5px 5px 5px gray;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+    padding: 10px;
+  }

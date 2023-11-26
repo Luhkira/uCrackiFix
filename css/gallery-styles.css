@@ -1,0 +1,31 @@
+/*
+ * File Name:   gallery-styles.css
+ * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:      COP 2822C at Valencia College
+ * Professor:   David Stendel 
+ * Description: This is the CSS file for the gallery page.
+ * Date:        11/25/2023
+ */
+
+
+/* Style Rules for Image Boxes */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

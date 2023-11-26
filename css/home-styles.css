@@ -1,0 +1,252 @@
+/*
+ * File Name:	home-styles.css
+ * Names:		Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:		COP 2822C at Valencia College
+ * Professor:	David Stendel 
+ * Description:	This is the CSS file for the home page.
+ * Date:		11/25/2023
+ */
+
+/* Style Rules For Home Page */
+/* Style Rules For First Div - Welcome Content*/
+#wc-height-align {
+    border-bottom: 1px solid #c9c9c9;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 2em;
+    padding-bottom: 0;
+    background-color: #fafafa;
+}
+
+#welcome h1 {
+    font-weight: 700;
+    width: 300px;
+}
+
+/* Style Rules For Welcome "Send Your Device" Button */
+#wc-button {
+    width: 10.5em;
+    height: 3em;
+    background-color: #009FD9;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 1.5em 0;
+}
+
+#wc-button a {
+    display: block;
+    box-sizing: border-box;
+    width: 10.5em;
+    height: 3em;
+    padding-top: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:500;
+}
+
+/* Style Rules For Welcome Image */
+#wc-img img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Style Rules For Second Div - Common Issues Content */
+#common-issues {
+    padding: 3em 2em;
+    padding-bottom: 0;
+}
+
+#common-issues-heading {
+    padding-bottom: 3.5em;
+    text-align: center;
+}
+
+#ci-height-align {
+    border-bottom: 1px solid #c9c9c9;
+}
+
+/* Style Rules For Cellphone Issues Container */
+#cellphone-issues {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cell-issues {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+#cellphone-issues img {
+    width: 175px;
+    height: 175px;
+    border: 1px solid #f1f1f1;
+    border-radius: 50% 50% 50% 50%;
+}
+
+#cellphone-issues h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Style Rules For Third Div - Promo Content */
+#promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 2em;
+    background-color: #fafafa;
+}
+
+/* Style Rules For Promo Wrap Container */
+#promo-wrap {
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0 10px 50px 0 #0000002f;
+    overflow: hidden;
+}
+
+/* Style Rules For Promo Wrap Content */
+#promo-txt {
+    text-align: center;
+    margin: 2em;
+}
+
+#promo-txt h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#promo-img img {
+    display: block;
+}
+
+/* Style Rules For Promo "Send Your Device" Button */
+#promo-btn {
+    width: 10.5em;
+    height: 3em;
+    background-color: #009FD9;
+    border-width: 1px;
+    border-radius: 10px;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+#promo-btn a {
+    display: block;
+    box-sizing: border-box;
+    width: 10.5em;
+    height: 3em;
+    padding: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:500;
+}
+
+
+/* Media Query For Tablet Viewport */
+@media screen and (min-width: 550px), print {
+
+    /* Tablet Viewport: Style Rules For Welcome Container And Contents */
+    #welcome {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #wc-button {
+        transition: opacity 0.5s;
+    }
+
+    #wc-button:hover {
+        opacity: 0.65;
+    }
+
+    #wc-img {
+        width: 50%;
+    }
+
+    /* Tablet Viewport: Style Rules For Promo Container */
+    #promo {
+        padding: 4em 7em;
+    }
+
+    #promo-btn {
+        transition: opacity 0.5s;
+    }
+
+    #promo-btn:hover {
+        opacity: 0.65;
+    }
+}
+
+
+/* Media Query For Desktop Viewport */
+@media screen and (min-width: 960px), print {
+
+    /* Desktop Viewport: Style Rules For Aligning Div's Height */
+    #wc-height-align {
+        padding-top: 3em;
+        background-color: #fafafa;
+    }
+
+    #ci-height-align {
+        padding-top: 5em;
+        padding-bottom: 2em;
+    }
+
+    #promo-height-align {
+        padding-top: 5em;
+        padding-bottom: 5em;
+        background-color: #fafafa;
+    }
+
+    /* Desktop Viewport: Style Rules For Welcome Wrap Content */
+    #welcome-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #wc-heading h1 {
+        width: 450px;
+        font-size: 46px;
+    }
+
+    #wc-img img {
+        width: 75%;
+    }
+
+    /* Desktop Viewport: Style Rules For Common Issues Area */
+    #common-issues-heading {
+        padding-bottom: 5em;
+    }
+
+    #common-issues-heading h1 {
+        font-size: 46px;
+    }
+
+    #cellphone-issues {
+        flex-direction: row;
+    }
+
+    .cell-issues img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Desktop Viewport: Style Rules For Promo Area */
+    #promo-wrap {
+        max-width: 50%;
+    }
+
+    #promo-txt {
+        margin: 2em 4em;
+    }
+}
