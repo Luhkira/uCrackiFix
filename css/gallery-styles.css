@@ -7,25 +7,40 @@
  * Date:        11/25/2023
  */
 
+/* Style Rules For Gallery Page */
 
-/* Style Rules for Image Boxes */
-
-.container {
+/* Style Rules For Mobile Viewport */
+/* Style Rules For Image Boxes */
+main {
   display: flex;
+  padding: 1.5em;
+  padding-bottom: 4em;
+  max-width: 1100px;
+  margin: auto;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .box {
-  width: 200px;
-  height: 200px;
-  margin: 10px;
-  border: 2px solid black;
+  min-width: 150px;
+  height: auto;
+  max-width: 350px;
+  margin: 2em 1em 7px;
+  padding: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 .box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Media Query For Tablet Viewport */
+@media screen and (min-width: 550px), print {
+  
+  .box {
+    width: min(39vw, 280px);
+  }
 }
