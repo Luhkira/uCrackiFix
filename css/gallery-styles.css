@@ -4,13 +4,13 @@
  * Course:      COP 2822C at Valencia College
  * Professor:   David Stendel 
  * Description: This is the CSS file for the gallery page.
- * Date:        11/25/2023
+ * Date:        11/27/2023
  */
 
 /* Style Rules For Gallery Page */
 
 /* Style Rules For Mobile Viewport */
-/* Style Rules For Image Boxes */
+/* Style Rules For Main */
 main {
   display: flex;
   padding: 1.5em;
@@ -22,6 +22,7 @@ main {
   align-items: center;
 }
 
+/* Style Rules For Image Boxes */
 .box {
   min-width: 150px;
   height: auto;
@@ -40,6 +41,7 @@ main {
 /* Media Query For Tablet Viewport */
 @media screen and (min-width: 550px), print {
   
+  /* Tablet Viewport: Style Rules For Image Boxes */
   .box {
     width: min(39vw, 280px);
   }
