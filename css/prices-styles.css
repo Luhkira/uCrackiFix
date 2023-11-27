@@ -4,36 +4,54 @@
  * Course:      COP 2822C at Valencia College
  * Professor:   David Stendel 
  * Description: This is the CSS file for the prices page.
- * Date:        11/25/2023
+ * Date:        11/27/2023
  */
 
 /* Style Rules For Prices Page */
+/* Style Rules For Heading */
+h2 {
+  margin: 1.5em auto;
+  padding: 0 1.5em;
+  text-align: center;
+  max-width: 920px;
+}
+
 /* Style Rules For Prices Table */
 table {
-    width: 80%;
-    margin: 0 auto;
-    border: 3px solid #373684;
-}
-  
-table, tr, th, td {
-    border-collapse: collapse;
-    padding: 2%;
-}
-  
-caption {
-    font-size: 2em;
-    padding: 2%;
-    margin-top: 2%;
-}
-  
-th, td {
-  border: 1px solid #a1d0ff;
+  margin: 0 auto 3em;
+  max-width: 700px;
+  border-collapse: collapse;
 }
 
-td {
-  text-align: center;
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-tr {
-  background-color: #fff;
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding: 5px;
+  padding-right: 2px;
+  background-color: #009FD9;
+  color: white;
+  border: 1px solid #ddd;
+  font-size: clamp(12px, 2.5vw, 18px);
+  text-align: left;
+}
+
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: clamp(10px, 2.5vw, 16px);
+}
+
+/* Media Query For Tablet Viewport */
+@media screen and (min-width: 550px), print {
+
+  table th {
+    padding: 5px;
+    text-align: center;
+  }
 }
