@@ -7,7 +7,7 @@
             Course: COP 2822C at Valencia College
             Professor: David Stendel
             Description: The home page of the website for ... about ....
-            Date: 11/20/2023
+            Date: 11/26/2023
         -->
         <title>Crack N' Fix</title>
         <meta charset="utf-8">
@@ -16,7 +16,7 @@
         <meta name="author" content="Adrian Perez Rosado, Lucas Kizirian Rangel">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/global-styles.css">
-        <link rel="stylesheet" href="css/sebdyourdevice-styles.css">
+        <link rel="stylesheet" href="css/sendyourdevice-styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -55,49 +55,59 @@
                 </div>
             </div>
         </nav>
-        <main>
-            <h1>Here at Crack N' Fix, we offer repairs to a wide variety of devices. If you want to book a repair, type your information below.</h1>
-            <form class="form-grid">
-            <fieldset>
-              <legend>Customer Information</legend>
-              <label for="fName">First Name:</label>
-              <input type="text" name="fName" id="fName">
-              <label for="lName">Last Name:</label>
-              <input type="text" name="lName" id="lName"> 
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email">
-              <label for="phone">Phone:</label>
-              <input type="tel" id="phone" name="phone">
-              <label for="zip">Zip Code:</label>
-              <input type="zip" id="zip" name="zip">
-            </fieldset>
-            <fieldset>
-              <legend>Repair</legend>
-              <p>Type of repair:</p>
-              <label for="screen"><input type="checkbox" name="interest" id="screen" value="screen">Screen Repair</label>
-              <label for="battery"><input type="checkbox" name="interest" id="battery" value="battery">Battery Repair</label>
-              <label for="soft"><input type="checkbox" name="interest" id="soft" value="soft">Software Repair</label>
-              <label for="restore"><input type="checkbox" name="interest"  id="restore" value="restore">Full Device Restoration</label>
-            </fieldset>
-            <fieldset>
-              <legend>Schedule</legend>
-              <p>Select a Day:</p>
-              <label for="monday"><input type="checkbox" name="interest" id="monday" value="monday">Monday</label>
-              <label for="tuesday"><input type="checkbox" name="interest" id="tuesday" value="tuesday">Tuesday</label>
-              <label for="wednesday"><input type="checkbox" name="interest" id="wednesday" value="wednesday">Wednesday</label>
-              <label for="thursday"><input type="checkbox" name="interest"  id="thursday" value="thursday">Thursday</label>
-              <label for="friday"><input type="checkbox" name="interest"  id="friday" value="friday">Friday</label>
-              <label for="saturday"><input type="checkbox" name="interest"  id="saturday" value="saturday">Saturday</label>
-              <label for="sunday"><input type="checkbox" name="interest"  id="sunday" value="sunday">Sunday</label>
-            </fieldset>
-            <fieldset>
-              <legend>Time</legend>
-              <label for="time">Pick Available Time:</label>
-              <input type="time" id="time" name="time">
-            </fieldset>
-            <input type="submit"  id="submit"  value="Book"  class="btn">
-          </form>
 
+        <!--  -->
+        <main>
+            <div id="heading">
+                <img src="images/phone-repair31.png" alt="Phone Repair">
+                <h1>Here at Crack N' Fix, we offer repairs to a wide variety of devices. If you want to book a repair, type your information below.</h1>
+            </div>
+            <form class="form-grid" autocomplete="on">
+                <fieldset id="personal-info">
+                    <div id="name-wrap">
+                        <div>
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" class="input" placeholder="Your name.." required>
+                        </div>
+                        <div>
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" class="input" placeholder="Your last name.." required>
+                        </div>
+                    </div>
+                    <label for="email">Email Address</label><br>
+                    <input type="email" name="email" id="email" class="input" placeholder="Your email.." pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" name="phone" id="phone" class="input" placeholder="(407) 123-4567" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required><br>
+                    <label for="details">Message</label><br>
+                    <textarea name="details" id="details" class="input" placeholder="Tell us more.."></textarea>
+                </fieldset>
+                <fieldset id="repair-info">
+                    <label id="repair-label">Type of Repair:</label>
+                    <input type="checkbox" name="interest" id="screen" class="checkbox" value="screen"><label for="screen">Screen Repair</label><br>
+                    <input type="checkbox" name="interest" id="battery" class="checkbox" value="battery"><label for="battery">Battery Repair</label><br>
+                    <input type="checkbox" name="interest" id="soft" class="checkbox" value="soft"><label for="soft">Software Repair</label><br>
+                    <input type="checkbox" name="interest" id="restore" class="checkbox" value="restore"><label for="restore">Full Device Restoration</label>
+                </fieldset>
+                <fieldset id="date-info">
+                    <div>
+                        <label>Select a Day:</label>
+                        <select id="day" name="day">
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="time">Select a Time:</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+                </fieldset>
+                <input type="submit"  id="submit"  value="Book"  class="btn">
+            </form>
         </main>
 
         <!--  -->

@@ -1,0 +1,142 @@
+/*
+ * File Name:   sendyourdevice-styles.css
+ * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:      COP 2822C at Valencia College
+ * Professor:   David Stendel 
+ * Description: This is the CSS file for the send your device page.
+ * Date:        11/26/2023
+ */
+
+/* Style Rules For Send Your Device Page */
+
+/* Style Rules For Mobile Viewport */
+/* Style Rules For Page Heading */
+#heading img {
+    margin: 0 auto;
+    max-height: 260px;
+}
+
+#heading h1 {
+    padding: 1.5em 1em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Style Rules For Page Form */
+fieldset {
+    padding: 20px;
+    margin: 1.5em;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Style Rules For Personal Info Fieldset */
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #a1d0ff;
+    border-radius: 4px;
+}
+
+/* Style Rules For Repair Info Fieldset */
+textarea {
+    height: 70px;
+}
+
+.checkbox {
+    margin-right: 10px;
+    /* border-color: #a1d0ff;  ---- Style does not work ---- */
+}
+
+#repair-label {
+    display: block;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+/* Style Rules For Date Info Fieldset */
+#date-info label {
+    display: block;
+}
+
+#day, #time {
+    width: 120px;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #a1d0ff;
+    border-radius: 4px;
+    background-color: white;
+}
+
+/* Style Rules For Submit Button */
+input[type=submit] {
+    display: block;
+    width: 10.5em;
+    height: 3em;
+    margin: 2em auto 3em;
+    border: none;
+    border-radius: 10px;
+    background-color: #009FD9;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input[type=submit]:hover {
+    opacity: 0.65;
+}
+
+
+/* Media Query For Tablet Viewport */
+@media screen and (min-width: 550px), print {
+
+    /* Style Rules For Page Heading */
+    #heading {
+        margin-left: 1.5em;
+    }
+
+    #heading img {
+        margin: 0;
+        max-height: 100%;
+    }
+
+    /* Style Rules For Main and Heading */
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    #heading h1 {
+        margin: 2em auto;
+        padding: 0;
+        max-width: 350px;
+    }
+
+    /* Style Rules For Page Form */
+    form {
+        min-width: 280px;
+        max-width: 500px;
+    }
+
+    /* Style Rules For Personal Info Fieldset */
+    #name-wrap {
+        display: flex;
+        gap: 1em;
+    }
+
+    /* Style Rules For Date Info Fieldset */
+    #date-info {
+        display: flex;
+        gap: 1.5em;
+    }
+
+    #day, #time {
+        width: 100%;
+    }
+}
