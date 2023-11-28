@@ -42,11 +42,11 @@ fieldset {
     border-radius: 4px;
 }
 
-/* Style Rules For Repair Info Fieldset */
 textarea {
     height: 70px;
 }
 
+/* Style Rules For Repair Info Fieldset */
 .checkbox {
     margin-right: 10px;
     /* border-color: #a1d0ff;  ---- Style does not work ---- */
@@ -94,7 +94,15 @@ input[type=submit]:hover {
 /* Media Query For Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
-    /* Style Rules For Page Heading */
+    /* Tablet Viewport: Style Rules For Main */
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    /* Tablet Viewport: Style Rules For Page Heading */
     #heading {
         margin-left: 1.5em;
     }
@@ -104,33 +112,25 @@ input[type=submit]:hover {
         max-height: 100%;
     }
 
-    /* Style Rules For Main and Heading */
-    main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5em;
-    }
-
     #heading h1 {
         margin: 2em auto;
         padding: 0;
         max-width: 350px;
     }
 
-    /* Style Rules For Page Form */
+    /* Tablet Viewport: Style Rules For Page Form */
     form {
         min-width: 280px;
         max-width: 500px;
     }
 
-    /* Style Rules For Personal Info Fieldset */
+    /* Tablet Viewport: Style Rules For Personal Info Fieldset */
     #name-wrap {
         display: flex;
         gap: 1em;
     }
 
-    /* Style Rules For Date Info Fieldset */
+    /* Tablet Viewport: Style Rules For Date Info Fieldset */
     #date-info {
         display: flex;
         gap: 1.5em;

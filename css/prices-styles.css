@@ -50,6 +50,7 @@ table td {
 /* Media Query For Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
+  /* Tablet Viewport: Style Rules For Prices Table */
   table th {
     padding: 5px;
     text-align: center;

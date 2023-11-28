@@ -7,19 +7,126 @@
  * Date:        11/25/2023
  */
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Style Rules For Send Your Device Page */
+
+/* Style Rules For Mobile Viewport */
+/* Style Rules For Page Main */
+main {
+    padding: 1.5em;
+    padding-bottom: 3em;
 }
 
-.form {
-    width: 40%;
-    padding: 20px;
-    border: 1px solid black;
-        }
+/* Style Rules For Page Heading */
+#heading {
+    margin: auto;
+    max-width: 650px;
+    text-align: center;
+}
 
-.map {
-    width: 50%;
+/* Style Rules For Contact Form */
+#form {
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+#contact-form {
+    margin: 0;
+    padding: 20px;
+    min-height: 420px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #a1d0ff;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Style Rules For Submit Button */
+input[type=submit] {
+    display: block;
+    width: 10.5em;
+    height: 3em;
+    margin: 2em auto 3em;
+    border: none;
+    border-radius: 10px;
+    background-color: #009FD9;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input[type=submit]:hover {
+    opacity: 0.65;
+}
+
+/* Style Rules For Map */
+#map {
+    margin: auto;
+    margin-top: 1.5em;
+    max-width: 550px;
     height: 400px;
-        }
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+/* Media Query For Tablet Viewport */
+@media screen and (min-width: 550px), print {
+
+    /* Tablet Viewport: Style Rules For Personal Info Fieldset */
+    #name-wrap {
+        display: flex;
+        gap: 1em;
+    }
+}
+
+/* Media Query For Desktop Viewport */
+@media screen and (min-width: 960px), print {
+
+    /* Desktop Viewport: Style Rules For Page Heading */
+    #heading {
+        margin-bottom: 4em;
+    }
+
+    /* Desktop Viewport: Style Rules For Form-Map-Container */
+    #form-map-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    /* Desktop Viewport: Style Rules For Contact Form */
+    #form {
+        margin: 0;
+    }
+
+    #contact-form {
+        margin: 0;
+        width: min(39vw, 550px);
+        height: min(39vw, 550px);
+        max-height: 420px;
+    }
+
+    /* Style Rules For Submit Button */
+    input[type=submit] {
+        margin-bottom: 0;
+    }
+
+    /* Desktop Viewport: Style Rules For Map */
+    #map {
+        margin: 0;
+        width: min(39vw, 550px);
+        height: min(39vw, 550px);
+    }
+}
