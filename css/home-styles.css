@@ -12,240 +12,238 @@
 /* Style Rules for Mobile Viewport */
 /* Style Rules for First Div - Welcome Area Content*/
 #wc-height-align {
-    border-bottom: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
 }
 
 #welcome {
-    display: flex;
-    flex-direction: column;
-    padding: 3em 2em;
-    padding-bottom: 0;
-    background-color: #fafafa;
+	display: flex;
+	flex-direction: column;
+	padding: 3em 2em;
+	padding-bottom: 0;
+	background-color: #fafafa;
 }
 
 #welcome h1 {
-    font-weight: 700;
-    width: 300px;
+	font-weight: 700;
+	width: 300px;
 }
 
 /* Style Rules for Welcome "Send Your Device" Button */
 #wc-button {
-    margin: 1.5em 0;
-    width: 10.5em;
-    height: 3em;
-    border-width: 1px;
-    border-radius: 10px;
-    background-color: #009FD9;
+	margin: 1.5em 0;
+	width: 10.5em;
+	height: 3em;
+	border-width: 1px;
+	border-radius: 10px;
+	background-color: #009FD9;
 }
 
 #wc-button a {
-    display: block;
-    padding-top: 11px;
-    width: 10.5em;
-    height: 3em;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight:500;
+	display: block;
+	padding-top: 11px;
+	width: 10.5em;
+	height: 3em;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight:500;
 }
 
 /* Style Rules for Welcome Image */
 #wc-img img {
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 /* Style Rules for Second Div - Common Issues Content */
 #common-issues {
-    padding: 3em 2em;
-    padding-bottom: 0;
+	padding: 3em 2em;
+	padding-bottom: 0;
 }
 
 #common-issues-heading {
-    padding-bottom: 3.5em;
-    text-align: center;
+	padding-bottom: 3.5em;
+	text-align: center;
 }
 
 #ci-height-align {
-    border-bottom: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
 }
 
 /* Style Rules for Cellphone Issues Container */
 #cellphone-issues {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .cell-issues {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 2em;
 }
 
 #cellphone-issues img {
-    width: 175px;
-    height: 175px;
-    border: 1px solid #f1f1f1;
-    border-radius: 50% 50% 50% 50%;
+	width: 175px;
+	height: 175px;
+	border: 1px solid #f1f1f1;
+	border-radius: 50% 50% 50% 50%;
 }
 
 #cellphone-issues h2 {
-    font-size: 24px;
-    font-weight: 400;
+	font-size: 24px;
+	font-weight: 400;
 }
 
 /* Style Rules for Third Div - Promo Content */
 #promo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3em 2em;
-    background-color: #fafafa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3em 2em;
+	background-color: #fafafa;
 }
 
 /* Style Rules for Promo Wrap Container */
 #promo-wrap {
-    border-radius: 16px 16px 16px 16px;
-    box-shadow: 0 10px 50px 0 #0000002f;
-    overflow: hidden;
+	border-radius: 16px 16px 16px 16px;
+	box-shadow: 0 10px 50px 0 #0000002f;
+	overflow: hidden;
 }
 
 /* Style Rules for Promo Wrap Content */
 #promo-txt {
-    text-align: center;
-    margin: 2em;
+	text-align: center;
+	margin: 2em;
 }
 
 #promo-txt h1 {
-    font-size: 26px;
-    font-weight: 700;
+	font-size: 26px;
+	font-weight: 700;
 }
 
 #promo-img img {
-    display: block;
+	display: block;
 }
 
 /* Style Rules for Promo "Send Your Device" Button */
 #promo-btn {
-    margin-top: 2.5em;
-    margin-bottom: 1.5em;
-    width: 10.5em;
-    height: 3em;
-    border-radius: 10px;
-    background-color: #009FD9;
+	margin-top: 2.5em;
+	margin-bottom: 1.5em;
+	width: 10.5em;
+	height: 3em;
+	border-radius: 10px;
+	background-color: #009FD9;
 }
 
 #promo-btn a {
-    display: block;
-    padding: 11px;
-    width: 10.5em;
-    height: 3em;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight:500;
+	display: block;
+	padding: 11px;
+	width: 10.5em;
+	height: 3em;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight:500;
 }
-
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
-    /* Tablet Viewport: Style Rules for Welcome Container and Contents */
-    #welcome {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+	/* Tablet Viewport: Style Rules for Welcome Container and Contents */
+	#welcome {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
 
-    #wc-button {
-        transition: opacity 0.5s;
-    }
+	#wc-button {
+		transition: opacity 0.5s;
+	}
 
-    #wc-button:hover {
-        opacity: 0.65;
-    }
+	#wc-button:hover {
+		opacity: 0.65;
+	}
 
-    #wc-img {
-        width: 50%;
-    }
+	#wc-img {
+		width: 50%;
+	}
 
-    /* Tablet Viewport: Style Rules for Promo Container */
-    #promo {
-        padding: 4em 7em;
-    }
+	/* Tablet Viewport: Style Rules for Promo Container */
+	#promo {
+		padding: 4em 7em;
+	}
 
-    #promo-btn {
-        transition: opacity 0.5s;
-    }
+	#promo-btn {
+		transition: opacity 0.5s;
+	}
 
-    #promo-btn:hover {
-        opacity: 0.65;
-    }
+	#promo-btn:hover {
+		opacity: 0.65;
+	}
 }
-
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 960px), print {
 
-    /* Desktop Viewport: Style Rules for Aligning Div's Height */
-    #wc-height-align {
-        padding-top: 3em;
-        background-color: #fafafa;
-    }
+	/* Desktop Viewport: Style Rules for Aligning Div's Height */
+	#wc-height-align {
+		padding-top: 3em;
+		background-color: #fafafa;
+	}
 
-    #ci-height-align {
-        padding-top: 5em;
-        padding-bottom: 2em;
-    }
+	#ci-height-align {
+		padding-top: 5em;
+		padding-bottom: 2em;
+	}
 
-    #promo-height-align {
-        padding-top: 5em;
-        padding-bottom: 5em;
-        background-color: #fafafa;
-    }
+	#promo-height-align {
+		padding-top: 5em;
+		padding-bottom: 5em;
+		background-color: #fafafa;
+	}
 
-    /* Desktop Viewport: Style Rules for Welcome Wrap Content */
-    #welcome-wrap {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+	/* Desktop Viewport: Style Rules for Welcome Wrap Content */
+	#welcome-wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
-    #wc-heading h1 {
-        width: 450px;
-        font-size: 46px;
-    }
+	#wc-heading h1 {
+		width: 450px;
+		font-size: 46px;
+	}
 
-    #wc-img img {
-        width: 75%;
-    }
+	#wc-img img {
+		width: 75%;
+	}
 
-    /* Desktop Viewport: Style Rules for Common Issues Area */
-    #common-issues-heading {
-        padding-bottom: 5em;
-    }
+	/* Desktop Viewport: Style Rules for Common Issues Area */
+	#common-issues-heading {
+		padding-bottom: 5em;
+	}
 
-    #common-issues-heading h1 {
-        font-size: 46px;
-    }
+	#common-issues-heading h1 {
+		font-size: 46px;
+	}
 
-    #cellphone-issues {
-        flex-direction: row;
-    }
+	#cellphone-issues {
+		flex-direction: row;
+	}
 
-    .cell-issues img {
-        width: 200px;
-        height: 200px;
-    }
+	.cell-issues img {
+		width: 200px;
+		height: 200px;
+	}
 
-    /* Desktop Viewport: Style Rules for Promo Area */
-    #promo-wrap {
-        max-width: 50%;
-    }
+	/* Desktop Viewport: Style Rules for Promo Area */
+	#promo-wrap {
+		max-width: 50%;
+	}
 
-    #promo-txt {
-        margin: 2em 4em;
-    }
+	#promo-txt {
+		margin: 2em 4em;
+	}
 }

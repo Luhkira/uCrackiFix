@@ -1,10 +1,10 @@
 /*
- * File Name:   prices-styles.css
- * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
- * Course:      COP 2822C at Valencia College
- * Professor:   David Stendel 
- * Description: This is the CSS file for the prices page.
- * Date:        11/27/2023
+ * File Name:	prices-styles.css
+ * Names:		Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:		COP 2822C at Valencia College
+ * Professor:	David Stendel 
+ * Description:	This is the CSS file for the prices page.
+ * Date:		11/27/2023
  */
 
 /* Style Rules for Prices Page */
@@ -12,49 +12,49 @@
 /* Style Rules for Mobile Viewport */
 /* Style Rules for Heading */
 h2 {
-  margin: 1.5em auto;
-  padding: 0 1.5em;
-  text-align: center;
-  max-width: 920px;
+	margin: 1.5em auto;
+	padding: 0 1.5em;
+	text-align: center;
+	max-width: 920px;
 }
 
 /* Style Rules for Prices Table */
 table {
-  margin: 0 auto 3em;
-  max-width: 700px;
-  border-collapse: collapse;
+	margin: 0 auto 3em;
+	max-width: 700px;
+	border-collapse: collapse;
 }
 
 table tr:nth-child(even) {
-  background-color: #f2f2f2;
+	background-color: #f2f2f2;
 }
 
 table tr:hover {
-  background-color: #ddd;
+	background-color: #ddd;
 }
 
 table th {
-  padding: 5px;
-  padding-right: 2px;
-  background-color: #009FD9;
-  color: white;
-  border: 1px solid #ddd;
-  font-size: clamp(12px, 2.5vw, 18px);
-  text-align: left;
+	padding: 5px;
+	padding-right: 2px;
+	background-color: #009FD9;
+	color: white;
+	border: 1px solid #ddd;
+	font-size: clamp(12px, 2.5vw, 18px);
+	text-align: left;
 }
 
 table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  font-size: clamp(10px, 2.5vw, 16px);
+	border: 1px solid #ddd;
+	padding: 8px;
+	font-size: clamp(10px, 2.5vw, 16px);
 }
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
-  /* Tablet Viewport: Style Rules for Prices Table */
-  table th {
-    padding: 5px;
-    text-align: center;
-  }
+	/* Tablet Viewport: Style Rules for Prices Table */
+	table th {
+		padding: 5px;
+		text-align: center;
+	}
 }

@@ -1,10 +1,10 @@
 /*
- * File Name:   about-styles.css
- * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
- * Course:      COP 2822C at Valencia College
- * Professor:   David Stendel 
- * Description: This is the CSS file for the about us page.
- * Date:        11/25/2023
+ * File Name:	about-styles.css
+ * Names:		Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:		COP 2822C at Valencia College
+ * Professor:	David Stendel 
+ * Description:	This is the CSS file for the about us page.
+ * Date:		11/25/2023
  */
 
 /* Style Rules for About Us Page */
@@ -12,88 +12,117 @@
 /* Style Rules for Mobile Viewport */
 /* Style Rules for Page Heading */
 #about-us-heading {
-    position: relative;
+	position: relative;
 }
 
 #about-us-heading img {
-    width: 100%;
-    height: 100%;
-    filter: brightness(65%)
+	width: 100%;
+	height: 100%;
+	filter: brightness(65%)
 }
 
 #about-us-text-over-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #about-us-text-over-image p {
-    margin: 0;
-    color: #ffffff;
-    font-size: 32px;
-    font-weight: 500;
+	margin: 0;
+	color: #ffffff;
+	font-size: 32px;
+	font-weight: 500;
 }
 
 /* Style Rules for About Us Section */
 #about-us {
-    padding: 3em 3em;
-    background-color: #fafafa;
-    border-bottom: 1px solid #c9c9c9;
+	padding: 2.5em;
+	background-color: #fafafa;
+	border-bottom: 1px solid #c9c9c9;
 }
 
 /* Style Rules for Our Story Section */
 #our-story {
-    padding: 3em 3em;
-    border-bottom: 1px solid #c9c9c9;
+	padding: 2.5em;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#founders {
+	text-align: center;
+}
+
+#founders img {
+	display: inline-block;
+	width: min(39vw, 210px);
 }
 
 /* Style Rules for Our Mission Section */
 #our-mission {
-    padding: 3em 3em;
-    background-color: #fafafa;
-    border-bottom: 1px solid #c9c9c9;
+	padding: 2.5em;
+	background-color: #fafafa;
+	border-bottom: 1px solid #c9c9c9;
 }
-
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
-    section {
-        display: flex ;
-        justify-content: center;
-        align-items: center;
-        gap: 2em;
-    }
 
-    section img {
-        width: 60%;
-        min-width: 300px;
-        max-width: 600px;
-    }
+	/* Tablet Viewport: Style Rules for All Sections Content */
+	section {
+		display: flex ;
+		justify-content: center;
+		align-items: center;
+		gap: 2em;
+	}
 
-    .paragraph {
-        max-width: 400px;
-        min-width: 157px;
-    }
+	.paragraph {
+		max-width: 400px;
+		min-width: 157px;
+	}
 
-    section h2 {
-        text-align: center;
-        font-size: 30px;
-    }
+	section h2 {
+		text-align: center;
+		font-size: 30px;
+	}
 
-    section p {
-        font-size: clamp(15px, 2.5vw, 18px);
-    }
+	section p {
+		font-size: clamp(15px, 2.5vw, 18px);
+	}
 
-    #about-us {
-        padding-top: 5em;
-    }
+	/* Tablet Viewport: Style Rules for About Us Section */
+	#about-us {
+		padding-top: 5em;
+	}
 
-    #our-story img {
-        order: 1;
-    }
+	#about-us img {
+		width: min(50vw, 577px);
+	}
 
-    #our-mission {
-        padding-bottom: 5em;
-    }
+	/* Tablet Viewport: Style Rules for Our Story Section */
+	#our-story {
+		padding: 3.5em;
+		gap: 5em;
+	}
+
+	#founders-paragraph {
+		max-width: 500px;
+	}
+
+	#founders {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		order: 1;
+		min-width: min(30vw, 210px);
+	}
+
+	/* Tablet Viewport: Style Rules for Our Mission Section */
+	#our-mission {
+		padding: 3.5em;
+		padding-bottom: 4em;
+	}
+
+	#our-mission img {
+		width: min(50vw, 572px);
+	}
 }

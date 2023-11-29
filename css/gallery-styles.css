@@ -1,10 +1,10 @@
 /*
- * File Name:   gallery-styles.css
- * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
- * Course:      COP 2822C at Valencia College
- * Professor:   David Stendel 
- * Description: This is the CSS file for the gallery page.
- * Date:        11/27/2023
+ * File Name:	gallery-styles.css
+ * Names:		Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:		COP 2822C at Valencia College
+ * Professor:	David Stendel 
+ * Description:	This is the CSS file for the gallery page.
+ * Date:		11/27/2023
  */
 
 /* Style Rules for Gallery Page */
@@ -12,37 +12,37 @@
 /* Style Rules for Mobile Viewport */
 /* Style Rules for Main */
 main {
-  display: flex;
-  padding: 1.5em;
-  padding-bottom: 4em;
-  max-width: 1100px;
-  margin: auto;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	padding: 1.5em;
+	padding-bottom: 4em;
+	max-width: 1100px;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Style Rules for Image Boxes */
 .box {
-  min-width: 150px;
-  height: auto;
-  max-width: 350px;
-  margin: 2em 1em 7px;
-  padding: 0px;
-  box-shadow: 0 4px 8px 0 #00000033;
+	min-width: 150px;
+	height: auto;
+	max-width: 350px;
+	margin: 2em 1em 7px;
+	padding: 0px;
+	box-shadow: 0 4px 8px 0 #00000033;
 }
 
 .box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
-  
-  /* Tablet Viewport: Style Rules for Image Boxes */
-  .box {
-    width: min(39vw, 280px);
-  }
+	
+	/* Tablet Viewport: Style Rules for Image Boxes */
+	.box {
+		width: min(39vw, 280px);
+	}
 }

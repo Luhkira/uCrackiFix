@@ -1,10 +1,10 @@
 /*
- * File Name:   faqs-styles.css
- * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
- * Course:      COP 2822C at Valencia College
- * Professor:   David Stendel 
- * Description: This is the CSS file for the faqs page.
- * Date:        11/29/2023
+ * File Name:	faqs-styles.css
+ * Names:		Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:		COP 2822C at Valencia College
+ * Professor:	David Stendel 
+ * Description:	This is the CSS file for the faqs page.
+ * Date:		11/29/2023
  */
 
 /* Style Rules for FAQs Page */
@@ -12,50 +12,50 @@
 /* Style Rules for Mobile Viewport */
 /* Style Rules for Main */
 main {
-  display: flex;
-  margin: auto;
-  padding: 2em 1.5em;
-  padding-bottom: 4em;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 1300px;
+	display: flex;
+	margin: auto;
+	padding: 2em 1.5em;
+	padding-bottom: 4em;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 1300px;
 }
 
 /* Style Rules for FAQ Boxes and Text */
 .box {
-  margin: 10px;
-  border: 1px solid #c9c9c9;
-  box-shadow: 5px 5px 5px #00000042;
-  /* width: 400px;
-  height: 200px; */
+	margin: 10px;
+	border: 1px solid #c9c9c9;
+	box-shadow: 5px 5px 5px #00000042;
+	/* width: 400px;
+	height: 200px; */
 }
 
 .box h1 {
-  margin-top: 0;
-  padding: 10px;
-  font-size: 28px;
-  text-align: center;
+	margin-top: 0;
+	padding: 10px;
+	font-size: 28px;
+	text-align: center;
 }
 
 .box p {
-  margin-top: 0;
-  padding: 15px;
+	margin-top: 0;
+	padding: 15px;
 }
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
-  
-  /* Tablet Viewport: Style Rules for FAQ Boxes and Text */
-  .box {
-    width: min(39vw, 600px);
-  }
 
-  .box h1 {
-    font-size: clamp(24px, 4vw, 28px);
-  }
+	/* Tablet Viewport: Style Rules for FAQ Boxes and Text */
+	.box {
+		width: min(39vw, 600px);
+	}
 
-  .box p {
-    font-size: clamp(12px, 2.5vw, 18px);
-  }
+	.box h1 {
+		font-size: clamp(24px, 4vw, 28px);
+	}
+
+	.box p {
+		font-size: clamp(12px, 2.5vw, 18px);
+	}
 }

@@ -1,10 +1,10 @@
 /*
- * File Name:   contact-styles.css
- * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
- * Course:      COP 2822C at Valencia College
- * Professor:   David Stendel 
- * Description: This is the CSS file for the contact us page.
- * Date:        11/25/2023
+ * File Name:	contact-styles.css
+ * Names:		Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:		COP 2822C at Valencia College
+ * Professor:	David Stendel 
+ * Description:	This is the CSS file for the contact us page.
+ * Date:		11/25/2023
  */
 
 /* Style Rules for Contact Us Page */
@@ -12,123 +12,121 @@
 /* Style Rules for Mobile Viewport */
 /* Style Rules for Main */
 main {
-    padding: 1.5em;
-    padding-bottom: 3em;
+	padding: 1.5em;
+	padding-bottom: 3em;
 }
 
 /* Style Rules for Page Heading */
 #heading {
-    margin: auto;
-    max-width: 650px;
-    text-align: center;
+	margin: auto;
+	max-width: 650px;
+	text-align: center;
 }
 
 /* Style Rules for Contact Form */
 #form {
-    margin: 0 auto;
-    max-width: 550px;
+	margin: 0 auto;
+	max-width: 550px;
 }
 
 #contact-form {
-    margin: 0;
-    padding: 20px;
-    min-height: 420px;
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 10px;
+	margin: 0;
+	padding: 20px;
+	min-height: 420px;
+	background-color: #f2f2f2;
+	border: none;
+	border-radius: 10px;
 }
 
 .input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #a1d0ff;
-    border-radius: 4px;
+	width: 100%;
+	padding: 10px;
+	margin: 8px 0;
+	border: 1px solid #a1d0ff;
+	border-radius: 4px;
 }
 
 textarea {
-    height: 100px;
+	height: 100px;
 }
 
 /* Style Rules for Submit Button */
 input[type=submit] {
-    display: block;
-    width: 10.5em;
-    height: 3em;
-    margin: 2em auto 3em;
-    border: none;
-    border-radius: 10px;
-    background-color: #009FD9;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
+	display: block;
+	width: 10.5em;
+	height: 3em;
+	margin: 2em auto 3em;
+	border: none;
+	border-radius: 10px;
+	background-color: #009FD9;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
 }
 
 input[type=submit]:hover {
-    opacity: 0.65;
+	opacity: 0.65;
 }
 
 /* Style Rules for Map */
 #map {
-    margin: auto;
-    margin-top: 1.5em;
-    max-width: 550px;
-    height: 400px;
+	margin: auto;
+	margin-top: 1.5em;
+	max-width: 550px;
+	height: 400px;
 }
 
 iframe {
-    border-radius: 10px;
+	border-radius: 10px;
 }
-
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
-    /* Tablet Viewport: Style Rules for Personal Info Fieldset */
-    #name-wrap {
-        display: flex;
-        gap: 1em;
-    }
+	/* Tablet Viewport: Style Rules for Personal Info Fieldset */
+	#name-wrap {
+		display: flex;
+		gap: 1em;
+	}
 }
-
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 960px), print {
 
-    /* Desktop Viewport: Style Rules for Page Heading */
-    #heading {
-        margin-bottom: 4em;
-    }
+	/* Desktop Viewport: Style Rules for Page Heading */
+	#heading {
+		margin-bottom: 4em;
+	}
 
-    /* Desktop Viewport: Style Rules for Form-Map-Container */
-    #form-map-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5em;
-    }
+	/* Desktop Viewport: Style Rules for Form-Map-Container */
+	#form-map-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5em;
+	}
 
-    /* Desktop Viewport: Style Rules for Contact Form */
-    #form {
-        margin: 0;
-    }
+	/* Desktop Viewport: Style Rules for Contact Form */
+	#form {
+		margin: 0;
+	}
 
-    #contact-form {
-        margin: 0;
-        width: min(39vw, 550px);
-        height: min(39vw, 550px);
-        max-height: 420px;
-    }
+	#contact-form {
+		margin: 0;
+		width: min(39vw, 550px);
+		height: min(39vw, 550px);
+		max-height: 420px;
+	}
 
-    /* Desktop Viewport: Style Rules for Submit Button */
-    input[type=submit] {
-        margin-bottom: 0;
-    }
+	/* Desktop Viewport: Style Rules for Submit Button */
+	input[type=submit] {
+		margin-bottom: 0;
+	}
 
-    /* Desktop Viewport: Style Rules for Map */
-    #map {
-        margin: 0;
-        width: min(39vw, 550px);
-        height: min(39vw, 550px);
-    }
+	/* Desktop Viewport: Style Rules for Map */
+	#map {
+		margin: 0;
+		width: min(39vw, 550px);
+		height: min(39vw, 550px);
+	}
 }

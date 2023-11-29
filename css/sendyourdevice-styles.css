@@ -1,10 +1,10 @@
 /*
- * File Name:   sendyourdevice-styles.css
- * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
- * Course:      COP 2822C at Valencia College
- * Professor:   David Stendel 
- * Description: This is the CSS file for the send your device page.
- * Date:        11/26/2023
+ * File Name:	sendyourdevice-styles.css
+ * Names:		Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:		COP 2822C at Valencia College
+ * Professor:	David Stendel 
+ * Description:	This is the CSS file for the send your device page.
+ * Date:		11/26/2023
  */
 
 /* Style Rules for Send Your Device Page */
@@ -12,129 +12,128 @@
 /* Style Rules for Mobile Viewport */
 /* Style Rules for Page Heading */
 #heading img {
-    margin: 0 auto;
-    max-height: 260px;
+	margin: 0 auto;
+	max-height: 260px;
 }
 
 #heading h1 {
-    padding: 1.5em 1em;
-    padding-bottom: 0.5em;
-    text-align: center;
-    font-size: 22px;
+	padding: 1.5em 1em;
+	padding-bottom: 0.5em;
+	text-align: center;
+	font-size: 22px;
 }
 
 /* Style Rules for Page Form */
 fieldset {
-    padding: 20px;
-    margin: 1.5em;
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 10px;
+	padding: 20px;
+	margin: 1.5em;
+	background-color: #f2f2f2;
+	border: none;
+	border-radius: 10px;
 }
 
 /* Style Rules for Personal Info Fieldset */
 .input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #a1d0ff;
-    border-radius: 4px;
+	width: 100%;
+	padding: 10px;
+	margin: 8px 0;
+	border: 1px solid #a1d0ff;
+	border-radius: 4px;
 }
 
 textarea {
-    height: 70px;
+	height: 70px;
 }
 
 /* Style Rules for Repair Info Fieldset */
 .checkbox {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 #repair-label {
-    display: block;
-    margin: 0;
-    margin-bottom: 8px;
+	display: block;
+	margin: 0;
+	margin-bottom: 8px;
 }
 
 /* Style Rules for Date Info Fieldset */
 #date-info label {
-    display: block;
+	display: block;
 }
 
 #day, #time {
-    width: 120px;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #a1d0ff;
-    border-radius: 4px;
-    background-color: white;
+	width: 120px;
+	padding: 10px;
+	margin: 8px 0;
+	border: 1px solid #a1d0ff;
+	border-radius: 4px;
+	background-color: white;
 }
 
 /* Style Rules for Submit Button */
 input[type=submit] {
-    display: block;
-    width: 10.5em;
-    height: 3em;
-    margin: 2em auto 3em;
-    border: none;
-    border-radius: 10px;
-    background-color: #009FD9;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
+	display: block;
+	width: 10.5em;
+	height: 3em;
+	margin: 2em auto 3em;
+	border: none;
+	border-radius: 10px;
+	background-color: #009FD9;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
 }
 
 input[type=submit]:hover {
-    opacity: 0.65;
+	opacity: 0.65;
 }
-
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
-    /* Tablet Viewport: Style Rules for Main */
-    main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5em;
-    }
+	/* Tablet Viewport: Style Rules for Main */
+	main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5em;
+	}
 
-    /* Tablet Viewport: Style Rules for Page Heading */
-    #heading {
-        margin-left: 1.5em;
-    }
+	/* Tablet Viewport: Style Rules for Page Heading */
+	#heading {
+		margin-left: 1.5em;
+	}
 
-    #heading img {
-        margin: 0;
-        max-height: 100%;
-    }
+	#heading img {
+		margin: 0;
+		max-height: 100%;
+	}
 
-    #heading h1 {
-        margin: 2em auto;
-        padding: 0;
-        max-width: 350px;
-    }
+	#heading h1 {
+		margin: 2em auto;
+		padding: 0;
+		max-width: 350px;
+	}
 
-    /* Tablet Viewport: Style Rules for Page Form */
-    form {
-        min-width: 280px;
-        max-width: 500px;
-    }
+	/* Tablet Viewport: Style Rules for Page Form */
+	form {
+		min-width: 280px;
+		max-width: 500px;
+	}
 
-    /* Tablet Viewport: Style Rules for Personal Info Fieldset */
-    #name-wrap {
-        display: flex;
-        gap: 1em;
-    }
+	/* Tablet Viewport: Style Rules for Personal Info Fieldset */
+	#name-wrap {
+		display: flex;
+		gap: 1em;
+	}
 
-    /* Tablet Viewport: Style Rules for Date Info Fieldset */
-    #date-info {
-        display: flex;
-        gap: 1.5em;
-    }
+	/* Tablet Viewport: Style Rules for Date Info Fieldset */
+	#date-info {
+		display: flex;
+		gap: 1.5em;
+	}
 
-    #day, #time {
-        width: 100%;
-    }
+	#day, #time {
+		width: 100%;
+	}
 }
