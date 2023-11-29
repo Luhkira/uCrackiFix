@@ -3,14 +3,14 @@
  * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
  * Course:      COP 2822C at Valencia College
  * Professor:   David Stendel 
- * Description: This is the CSS file for the about page.
+ * Description: This is the CSS file for the about us page.
  * Date:        11/25/2023
  */
 
-/* Style Rules For About Us Page */
+/* Style Rules for About Us Page */
 
-/* Style Rules For Mobile Viewport */
-/* Style Rules For Page Heading */
+/* Style Rules for Mobile Viewport */
+/* Style Rules for Page Heading */
 #about-us-heading {
     position: relative;
 }
@@ -35,20 +35,20 @@
     font-weight: 500;
 }
 
-/* Style Rules For About Us Section */
+/* Style Rules for About Us Section */
 #about-us {
     padding: 3em 3em;
     background-color: #fafafa;
     border-bottom: 1px solid #c9c9c9;
 }
 
-/* Style Rules For Our Story Section */
+/* Style Rules for Our Story Section */
 #our-story {
     padding: 3em 3em;
     border-bottom: 1px solid #c9c9c9;
 }
 
-/* Style Rules For Our Mission Section */
+/* Style Rules for Our Mission Section */
 #our-mission {
     padding: 3em 3em;
     background-color: #fafafa;
@@ -56,7 +56,7 @@
 }
 
 
-/* Media Query For Tablet Viewport */
+/* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
     section {
         display: flex ;

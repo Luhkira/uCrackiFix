@@ -7,10 +7,10 @@
  * Date:        11/26/2023
  */
 
-/* Style Rules For Send Your Device Page */
+/* Style Rules for Send Your Device Page */
 
-/* Style Rules For Mobile Viewport */
-/* Style Rules For Page Heading */
+/* Style Rules for Mobile Viewport */
+/* Style Rules for Page Heading */
 #heading img {
     margin: 0 auto;
     max-height: 260px;
@@ -23,7 +23,7 @@
     font-size: 22px;
 }
 
-/* Style Rules For Page Form */
+/* Style Rules for Page Form */
 fieldset {
     padding: 20px;
     margin: 1.5em;
@@ -32,8 +32,7 @@ fieldset {
     border-radius: 10px;
 }
 
-/* Style Rules For Personal Info Fieldset */
-
+/* Style Rules for Personal Info Fieldset */
 .input {
     width: 100%;
     padding: 10px;
@@ -46,10 +45,9 @@ textarea {
     height: 70px;
 }
 
-/* Style Rules For Repair Info Fieldset */
+/* Style Rules for Repair Info Fieldset */
 .checkbox {
     margin-right: 10px;
-    /* border-color: #a1d0ff;  ---- Style does not work ---- */
 }
 
 #repair-label {
@@ -58,7 +56,7 @@ textarea {
     margin-bottom: 8px;
 }
 
-/* Style Rules For Date Info Fieldset */
+/* Style Rules for Date Info Fieldset */
 #date-info label {
     display: block;
 }
@@ -72,7 +70,7 @@ textarea {
     background-color: white;
 }
 
-/* Style Rules For Submit Button */
+/* Style Rules for Submit Button */
 input[type=submit] {
     display: block;
     width: 10.5em;
@@ -91,10 +89,10 @@ input[type=submit]:hover {
 }
 
 
-/* Media Query For Tablet Viewport */
+/* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
-    /* Tablet Viewport: Style Rules For Main */
+    /* Tablet Viewport: Style Rules for Main */
     main {
         display: flex;
         justify-content: center;
@@ -102,7 +100,7 @@ input[type=submit]:hover {
         gap: 1.5em;
     }
 
-    /* Tablet Viewport: Style Rules For Page Heading */
+    /* Tablet Viewport: Style Rules for Page Heading */
     #heading {
         margin-left: 1.5em;
     }
@@ -118,19 +116,19 @@ input[type=submit]:hover {
         max-width: 350px;
     }
 
-    /* Tablet Viewport: Style Rules For Page Form */
+    /* Tablet Viewport: Style Rules for Page Form */
     form {
         min-width: 280px;
         max-width: 500px;
     }
 
-    /* Tablet Viewport: Style Rules For Personal Info Fieldset */
+    /* Tablet Viewport: Style Rules for Personal Info Fieldset */
     #name-wrap {
         display: flex;
         gap: 1em;
     }
 
-    /* Tablet Viewport: Style Rules For Date Info Fieldset */
+    /* Tablet Viewport: Style Rules for Date Info Fieldset */
     #date-info {
         display: flex;
         gap: 1.5em;

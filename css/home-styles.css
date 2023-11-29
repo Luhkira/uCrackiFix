@@ -7,8 +7,10 @@
  * Date:		11/25/2023
  */
 
-/* Style Rules For Home Page */
-/* Style Rules For First Div - Welcome Content*/
+/* Style Rules for Home Page */
+
+/* Style Rules for Mobile Viewport */
+/* Style Rules for First Div - Welcome Area Content*/
 #wc-height-align {
     border-bottom: 1px solid #c9c9c9;
 }
@@ -26,7 +28,7 @@
     width: 300px;
 }
 
-/* Style Rules For Welcome "Send Your Device" Button */
+/* Style Rules for Welcome "Send Your Device" Button */
 #wc-button {
     margin: 1.5em 0;
     width: 10.5em;
@@ -47,13 +49,13 @@
     font-weight:500;
 }
 
-/* Style Rules For Welcome Image */
+/* Style Rules for Welcome Image */
 #wc-img img {
     height: 100%;
     width: 100%;
 }
 
-/* Style Rules For Second Div - Common Issues Content */
+/* Style Rules for Second Div - Common Issues Content */
 #common-issues {
     padding: 3em 2em;
     padding-bottom: 0;
@@ -68,7 +70,7 @@
     border-bottom: 1px solid #c9c9c9;
 }
 
-/* Style Rules For Cellphone Issues Container */
+/* Style Rules for Cellphone Issues Container */
 #cellphone-issues {
     display: flex;
     flex-direction: column;
@@ -95,7 +97,7 @@
     font-weight: 400;
 }
 
-/* Style Rules For Third Div - Promo Content */
+/* Style Rules for Third Div - Promo Content */
 #promo {
     display: flex;
     flex-direction: column;
@@ -104,14 +106,14 @@
     background-color: #fafafa;
 }
 
-/* Style Rules For Promo Wrap Container */
+/* Style Rules for Promo Wrap Container */
 #promo-wrap {
     border-radius: 16px 16px 16px 16px;
     box-shadow: 0 10px 50px 0 #0000002f;
     overflow: hidden;
 }
 
-/* Style Rules For Promo Wrap Content */
+/* Style Rules for Promo Wrap Content */
 #promo-txt {
     text-align: center;
     margin: 2em;
@@ -126,7 +128,7 @@
     display: block;
 }
 
-/* Style Rules For Promo "Send Your Device" Button */
+/* Style Rules for Promo "Send Your Device" Button */
 #promo-btn {
     margin-top: 2.5em;
     margin-bottom: 1.5em;
@@ -148,10 +150,10 @@
 }
 
 
-/* Media Query For Tablet Viewport */
+/* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
-    /* Tablet Viewport: Style Rules For Welcome Container And Contents */
+    /* Tablet Viewport: Style Rules for Welcome Container and Contents */
     #welcome {
         flex-direction: row;
         justify-content: space-evenly;
@@ -169,7 +171,7 @@
         width: 50%;
     }
 
-    /* Tablet Viewport: Style Rules For Promo Container */
+    /* Tablet Viewport: Style Rules for Promo Container */
     #promo {
         padding: 4em 7em;
     }
@@ -184,10 +186,10 @@
 }
 
 
-/* Media Query For Desktop Viewport */
+/* Media Query for Desktop Viewport */
 @media screen and (min-width: 960px), print {
 
-    /* Desktop Viewport: Style Rules For Aligning Div's Height */
+    /* Desktop Viewport: Style Rules for Aligning Div's Height */
     #wc-height-align {
         padding-top: 3em;
         background-color: #fafafa;
@@ -204,7 +206,7 @@
         background-color: #fafafa;
     }
 
-    /* Desktop Viewport: Style Rules For Welcome Wrap Content */
+    /* Desktop Viewport: Style Rules for Welcome Wrap Content */
     #welcome-wrap {
         display: flex;
         flex-direction: column;
@@ -220,7 +222,7 @@
         width: 75%;
     }
 
-    /* Desktop Viewport: Style Rules For Common Issues Area */
+    /* Desktop Viewport: Style Rules for Common Issues Area */
     #common-issues-heading {
         padding-bottom: 5em;
     }
@@ -238,7 +240,7 @@
         height: 200px;
     }
 
-    /* Desktop Viewport: Style Rules For Promo Area */
+    /* Desktop Viewport: Style Rules for Promo Area */
     #promo-wrap {
         max-width: 50%;
     }

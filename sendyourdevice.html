@@ -9,6 +9,7 @@
             Description: This is the HTML file for the send your device page.
             Date: 11/26/2023
         -->
+        
         <title>Crack N' Fix</title>
         <meta charset="utf-8">
         <meta name="description" content="Crack N' Fix Your Go-To Source for Expert Electronic Repair - specializes in fixing cellphone, computers and electronic devices">
@@ -27,7 +28,8 @@
         <link rel="manifest" href="/site.webmanifest">
     </head>
     <body>
-        <!-- Header Top Bar Section -->
+
+        <!-- Header, Top Bar Section and Logo -->
         <header>
             <div id="tb-height-align">
                 <div id="tb-width-align">
@@ -39,8 +41,8 @@
                 </div>
             </div>
         </header>
-
-        <!--  -->
+        
+        <!-- Navigation Links -->
         <nav>
             <div id="nav-height-align">
                 <div id="nav-width-align">
@@ -56,14 +58,22 @@
             </div>
         </nav>
 
-        <!--  -->
+        <!-- Main Page Content -->
         <main>
+
+            <!-- Page Heading Picture and Phrase -->
             <div id="heading">
                 <img src="images/phone-repair31.png" alt="Phone Repair">
                 <h1>Here at Crack N' Fix, we offer repairs to a wide variety of devices. If you want to book a repair, type your information below.</h1>
             </div>
+
+            <!-- Book a Repair Form -->
             <form autocomplete="on">
+
+                <!-- Fieldset for Personal Information -->
                 <fieldset id="personal-info">
+
+                    <!-- Outer Container for Two Inner Divs That Contains First Name and Last Name Form Fields (Flex Container to Change Field Orientation) -->
                     <div id="name-wrap">
                         <div>
                             <label for="fname">First Name</label>
@@ -80,17 +90,23 @@
                     <input type="tel" name="phone" id="phone" class="input" placeholder="(407) 123-4567" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required><br>
                     <label for="details">Message</label><br>
                     <textarea name="details" id="details" class="input" placeholder="Tell us more.."></textarea>
+
+                <!-- Fieldset for Repair Type -->
                 </fieldset>
                 <fieldset id="repair-info">
-                    <label id="repair-label">Type of Repair:</label>
+                    <label id="repair-label">Type of Repair</label>
                     <input type="checkbox" name="interest" id="screen" class="checkbox" value="screen"><label for="screen">Screen Repair</label><br>
                     <input type="checkbox" name="interest" id="battery" class="checkbox" value="battery"><label for="battery">Battery Repair</label><br>
                     <input type="checkbox" name="interest" id="soft" class="checkbox" value="soft"><label for="soft">Software Repair</label><br>
                     <input type="checkbox" name="interest" id="restore" class="checkbox" value="restore"><label for="restore">Full Device Restoration</label>
                 </fieldset>
+
+                <!-- Fieldset for Date and Time -->
                 <fieldset id="date-info">
+
+                    <!-- Day Selector -->
                     <div>
-                        <label>Select a Day:</label>
+                        <label>Select a Day</label>
                         <select id="day" name="day">
                             <option value="Monday">Monday</option>
                             <option value="Tuesday">Tuesday</option>
@@ -101,25 +117,31 @@
                             <option value="Sunday">Sunday</option>
                         </select>
                     </div>
+
+                    <!-- Time Selector -->
                     <div>
-                        <label for="time">Select a Time:</label>
-                        <input type="time" id="time" name="time">
+                        <label for="time">Select a Time</label>
+                        <input type="time" id="time" name="time" value="09:00" min="09:00" max="18:00" step="1800" required>
                     </div>
                 </fieldset>
+
+                <!-- Button to Submit Form -->
                 <input type="submit"  id="submit"  value="Book"  class="btn">
             </form>
         </main>
 
-        <!--  -->
+        <!-- Footer Content -->
         <footer>
             <div id="footer-height-align">
                 <div id="footer">
+
+                    <!-- Crack N' Fix Logo -->
                     <div id="footer-logo" id="footer-item">
                         <a href="index.html "><img src="images/logo.png" alt="Crack N' Fix Logo"></a>
                         <p>Crack N' Fix brings quality and reliability! 🚀 From iPhones to laptops, we're here to fix it all. Fast. Reliable. Convenient.</p>
                     </div>
 
-                    <!--  -->
+                    <!-- Social Media Icons and Links -->
                     <div id="footer-social-nav" id="footer-item">
                         <ul>
                             <li><a target="_blank" href="https://instagram.com"><img src="images/social_instagram_icon.png" alt="instagram"><p>Instagram</p></a></li>
@@ -129,7 +151,7 @@
                         </ul>
                     </div>
 
-                    <!--  -->
+                    <!-- Map Pin for Location -->
                     <div id="location" id="footer-item">
                         <a target="_blank" href="https://google.com/maps"><img src="images/map_pin_icon.png" alt="map location"></a>
                     </div>

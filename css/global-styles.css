@@ -3,7 +3,7 @@
  * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
  * Course:      COP 2822C at Valencia College
  * Professor:   David Stendel 
- * Description: This is the CSS file containing shared styles. Top bar (logo), nav, footer and page alignment.
+ * Description: This is the CSS file containing shared styles. Top bar (logo area), navigation, footer and page alignment.
  * Date:        11/25/2023
  */
 
@@ -14,25 +14,25 @@ body, header, nav, main, footer, img, h1, ul {
     border: 0;
 }
 
-/* Style Rules For Box Sizing Spplies to All Elements */  
+/* Style Rules for Box Sizing Applies to All Elements */  
 * {  
     box-sizing: border-box; 
 }
 
-/* Style Rules For Mobile Viewport */
-/* Style Rules For Body Content */
+/* Style Rules for Mobile Viewport */
+/* Style Rules for Body Content */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
 }
 
-/* Style Rules For Images */
+/* Style Rules for Images */
 img {
     max-width: 100%;
     display: block;
 }
 
-/* Style Rules For Header Content */
+/* Style Rules for Header Content (Top Bar/Logo Area) */
 header {
     background-color: #a1d0ff;
 }
@@ -51,7 +51,7 @@ header {
     height: 50px;
 }
 
-/* Style Rules For Navigation Content */
+/* Style Rules for Navigation Content */
 nav ul {
     list-style-type: none;
 }
@@ -75,12 +75,12 @@ nav ul li a:hover {
     color: #009FD9;
 }
 
-/* Style Rules For Main Content */
+/* Style Rules for Main Content */
 main {
     color: #323232;
 }
 
-/* Style Rules For Footer Content */
+/* Style Rules for Footer Content */
 footer {
     display: flex;
     flex-direction: column;
@@ -127,10 +127,10 @@ footer {
 }
 
 
-/* Media Query For Tablet Viewport */
+/* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
-    /* Tablet Viewport: Style Rules For Header Content */
+    /* Tablet Viewport: Style Rules for Header Content */
     #top-bar {
         padding-top: 1em;
         padding-bottom: 0.4em;
@@ -142,7 +142,7 @@ footer {
         height: 67px;
     }
 
-    /* Tablet Viewport: Style Rules For Nav Content */
+    /* Tablet Viewport: Style Rules for Nav Content */
     nav {
         padding: 0.5em;
         background-color: #ffffff;
@@ -165,7 +165,7 @@ footer {
     nav ul li a {
         transition: all 0.3s ease 0s;
         white-space: nowrap;
-        font-size: clamp(12px, 2.5vw, 17px);
+        font-size: clamp(12px, 2.5vw, 22px);
         color: #474747;
     }
 
@@ -175,7 +175,7 @@ footer {
         border-bottom: 2px solid #009FD9;
     }
 
-    /* Tablet Viewport: Style Rules For Footer Content */
+    /* Tablet Viewport: Style Rules for Footer Content */
     #footer-logo a img {
         width: 288px;
         height: 68px;
@@ -190,10 +190,11 @@ footer {
     }
 }
 
-/* Media Query For Desktop Viewport */
+
+/* Media Query for Desktop Viewport */
 @media screen and (min-width: 960px), print {
 
-    /* Desktop Viewport: Style Rules For Aligning All Page Content Width */
+    /* Desktop Viewport: Style Rules for Aligning All Page Content Width */
     .content-width-align {
         padding: 0;
         margin: auto;
@@ -202,7 +203,7 @@ footer {
         background-color: transparent;
     }
 
-    /* Desktop Viewport: Style Rules For Aligning Div's Height/Width */
+    /* Desktop Viewport: Style Rules for Aligning Div's Height/Width */
     #tb-height-align {
         padding-top: 0.8em;
         padding-bottom: 0.3em;
@@ -227,7 +228,7 @@ footer {
         padding: 1.5em 0;
     }
 
-    /* Desktop Viewport: Style Rules For Header Content */
+    /* Desktop Viewport: Style Rules for Header Content */
     #top-bar {
         padding: 0;
         justify-content:flex-start;
@@ -241,12 +242,12 @@ footer {
         box-sizing: content-box;
     }
 
-    /* Desktop Viewport: Style Rules For Nav Content */
+    /* Desktop Viewport: Style Rules for Nav Content */
     nav {
         padding: 0;
     }
 
-    /* Desktop Viewport: Style Rules For Footer Content */
+    /* Desktop Viewport: Style Rules for Footer Content */
     footer {
         display: block;
         padding: 0;
@@ -298,33 +299,11 @@ footer {
     }
 }
 
-/* Media Query For Print */
+
+/* Media Query for Print */
 @media print {
     body {
         background-color: #ffffff;
         color: #000000;
     }
 }
-
-
-
-
-
-/* ~~~~~~~~ TO-DO ~~~~~~~~ */
-/* 
-
-- Estilizar ABOUT US no table e desktop
-
-- Estilizar SEND DEVICE no table e desktop
-
-- Estilizar PRICES no table e desktop
-
-- Estilizar GALLERY no table e desktop
-
-- Estilizar FAQ no table e desktop
-
-- Estilizar CONTACT US no table e desktop
-
-- Adicionar comentarios nos HTML
-
-*/

@@ -3,27 +3,27 @@
  * Names:       Adrian Perez Rosado, Lucas Kizirian Rangel
  * Course:      COP 2822C at Valencia College
  * Professor:   David Stendel 
- * Description: This is the CSS file for the contact page.
+ * Description: This is the CSS file for the contact us page.
  * Date:        11/25/2023
  */
 
-/* Style Rules For Send Your Device Page */
+/* Style Rules for Contact Us Page */
 
-/* Style Rules For Mobile Viewport */
-/* Style Rules For Page Main */
+/* Style Rules for Mobile Viewport */
+/* Style Rules for Main */
 main {
     padding: 1.5em;
     padding-bottom: 3em;
 }
 
-/* Style Rules For Page Heading */
+/* Style Rules for Page Heading */
 #heading {
     margin: auto;
     max-width: 650px;
     text-align: center;
 }
 
-/* Style Rules For Contact Form */
+/* Style Rules for Contact Form */
 #form {
     margin: 0 auto;
     max-width: 550px;
@@ -50,7 +50,7 @@ textarea {
     height: 100px;
 }
 
-/* Style Rules For Submit Button */
+/* Style Rules for Submit Button */
 input[type=submit] {
     display: block;
     width: 10.5em;
@@ -68,7 +68,7 @@ input[type=submit]:hover {
     opacity: 0.65;
 }
 
-/* Style Rules For Map */
+/* Style Rules for Map */
 #map {
     margin: auto;
     margin-top: 1.5em;
@@ -80,25 +80,27 @@ iframe {
     border-radius: 10px;
 }
 
-/* Media Query For Tablet Viewport */
+
+/* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
-    /* Tablet Viewport: Style Rules For Personal Info Fieldset */
+    /* Tablet Viewport: Style Rules for Personal Info Fieldset */
     #name-wrap {
         display: flex;
         gap: 1em;
     }
 }
 
-/* Media Query For Desktop Viewport */
+
+/* Media Query for Desktop Viewport */
 @media screen and (min-width: 960px), print {
 
-    /* Desktop Viewport: Style Rules For Page Heading */
+    /* Desktop Viewport: Style Rules for Page Heading */
     #heading {
         margin-bottom: 4em;
     }
 
-    /* Desktop Viewport: Style Rules For Form-Map-Container */
+    /* Desktop Viewport: Style Rules for Form-Map-Container */
     #form-map-container {
         display: flex;
         justify-content: center;
@@ -106,7 +108,7 @@ iframe {
         gap: 1.5em;
     }
 
-    /* Desktop Viewport: Style Rules For Contact Form */
+    /* Desktop Viewport: Style Rules for Contact Form */
     #form {
         margin: 0;
     }
@@ -118,12 +120,12 @@ iframe {
         max-height: 420px;
     }
 
-    /* Style Rules For Submit Button */
+    /* Desktop Viewport: Style Rules for Submit Button */
     input[type=submit] {
         margin-bottom: 0;
     }
 
-    /* Desktop Viewport: Style Rules For Map */
+    /* Desktop Viewport: Style Rules for Map */
     #map {
         margin: 0;
         width: min(39vw, 550px);
