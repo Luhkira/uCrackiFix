@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<!--
@@ -68,7 +68,7 @@
 			</div>
 
 			<!-- Book a Repair Form -->
-			<form autocomplete="on">
+			<form action="https://formspree.io/f/xbjvvqdy" method="post" autocomplete="on">
 
 				<!-- Fieldset for Personal Information -->
 				<fieldset id="personal-info">
@@ -77,28 +77,28 @@
 					<div id="name-wrap">
 						<div>
 							<label for="fname">First Name</label>
-							<input type="text" name="fname" id="fname" class="input" placeholder="Your name.." required>
+							<input type="text" name="First Name:" id="fname" class="input" placeholder="Your name.." required>
 						</div>
 						<div>
 							<label for="lname">Last Name</label>
-							<input type="text" name="lname" id="lname" class="input" placeholder="Your last name.." required>
+							<input type="text" name="Last Name:" id="lname" class="input" placeholder="Your last name.." required>
 						</div>
 					</div>
 					<label for="email">Email Address</label><br>
-					<input type="email" name="email" id="email" class="input" placeholder="Your email.." pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
+					<input type="email" name="Email:" id="email" class="input" placeholder="Your email.." pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
 					<label for="phone">Phone</label><br>
-					<input type="tel" name="phone" id="phone" class="input" placeholder="(407) 123-4567" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required><br>
+					<input type="tel" name="Phone:" id="phone" class="input" placeholder="(407) 123-4567" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required><br>
 					<label for="details">Message</label><br>
-					<textarea name="details" id="details" class="input" placeholder="Tell us more.."></textarea>
+					<textarea name="Message:" id="details" class="input" placeholder="Tell us more.."></textarea>
 
 				<!-- Fieldset for Repair Type -->
 				</fieldset>
 				<fieldset id="repair-info">
 					<label id="repair-label">Type of Repair</label>
-					<input type="checkbox" name="interest" id="screen" class="checkbox" value="screen"><label for="screen">Screen Repair</label><br>
-					<input type="checkbox" name="interest" id="battery" class="checkbox" value="battery"><label for="battery">Battery Repair</label><br>
-					<input type="checkbox" name="interest" id="soft" class="checkbox" value="soft"><label for="soft">Software Repair</label><br>
-					<input type="checkbox" name="interest" id="restore" class="checkbox" value="restore"><label for="restore">Full Device Restoration</label>
+					<input type="checkbox" name="Type of Repair:" id="screen" class="checkbox" value="Screen Replacement"><label for="screen">Screen Repair</label><br>
+					<input type="checkbox" name="Type of Repair:" id="battery" class="checkbox" value="Battery Replacement"><label for="battery">Battery Repair</label><br>
+					<input type="checkbox" name="Type of Repair:" id="soft" class="checkbox" value="Software Repair"><label for="soft">Software Repair</label><br>
+					<input type="checkbox" name="Type of Repair:" id="restore" class="checkbox" value="Full Device Restoration"><label for="restore">Full Device Restoration</label>
 				</fieldset>
 
 				<!-- Fieldset for Date and Time -->
@@ -107,7 +107,7 @@
 					<!-- Day Selector -->
 					<div>
 						<label>Select a Day</label>
-						<select id="day" name="day">
+						<select name="Day:" id="day">
 							<option value="Monday">Monday</option>
 							<option value="Tuesday">Tuesday</option>
 							<option value="Wednesday">Wednesday</option>
@@ -121,7 +121,7 @@
 					<!-- Time Selector -->
 					<div>
 						<label for="time">Select a Time</label>
-						<input type="time" id="time" name="time" value="09:00" min="09:00" max="18:00" step="1800" required>
+						<input type="time" name="Time:" id="time" value="09:00" min="09:00" max="18:00" step="1800" required>
 					</div>
 				</fieldset>
 
