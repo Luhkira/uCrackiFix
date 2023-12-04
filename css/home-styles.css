@@ -166,8 +166,8 @@
 		opacity: 0.65;
 	}
 
-	#wc-img {
-		width: 50%;
+	#wc-img img {
+		max-width: 380px;
 	}
 
 	/* Tablet Viewport: Style Rules for Promo Container */
@@ -217,7 +217,7 @@
 	}
 
 	#wc-img img {
-		width: 75%;
+		max-width: 465px;
 	}
 
 	/* Desktop Viewport: Style Rules for Common Issues Area */

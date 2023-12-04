@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--
+			File Name: gallery.html
+			Names: Adrian Perez Rosado, Lucas Kizirian Rangel
+			Course: COP 2822C at Valencia College
+			Professor: David Stendel
+			Description: This is the HTML file for the slideshow gallery page. The main area of the page contains a slideshow (made entirely with CSS) of images from previous repairs.
+			Date: 12/04/2023
+		-->
+
+		<title>Crack N' Fix</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Crack N' Fix Your Go-To Source for Expert Electronic Repair - specializes in fixing cellphone, computers and electronic devices">
+		<meta name="keywords" content="computer repair, phone repair, mobile phone repair, laptop repair, tablet repair, electronic repair, Crack N' Fix">
+		<meta name="author" content="Adrian Perez Rosado, Lucas Kizirian Rangel">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/global-styles.css">
+		<link rel="stylesheet" href="css/gallery2.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+		<link rel="manifest" href="/site.webmanifest">
+	</head>
+	<body>
+
+		<!-- Header, Top Bar Section and Logo -->
+		<header>
+			<div id="tb-height-align">
+				<div id="tb-width-align">
+					<div id="top-bar">
+						<div id="logo">
+							<a href="index.html "><img src="images/Logo.png" alt="Crack N' Fix Logo"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Navigation Links -->
+		<nav>
+			<div id="nav-height-align">
+				<div id="nav-width-align">
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="sendyourdevice.html">Send Us Your Device</a></li>
+						<li><a href="prices.html">Prices</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="faqs.html">FAQs</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Main Page Content -->
+		<main>
+
+			<!-- Slidershow Outer Container -->
+			<div id="slidershow"> 
+
+				<!-- Slides Container -->
+				<div id="slides">
+
+					<!-- Hidden Radio Buttons to Enable Nav Bar Functionality -->
+					<input type="radio" name="r" id="r1" checked>
+					<input type="radio" name="r" id="r2">
+					<input type="radio" name="r" id="r3">
+					<input type="radio" name="r" id="r4">
+					<input type="radio" name="r" id="r5">
+					<input type="radio" name="r" id="r6">
+
+					<!-- Image 1 -->
+					<div class="slide s1">
+						<img src="images/hard-drive.png" alt="A phone hard drive">
+					</div>
+
+					<!-- Image 2 -->
+					<div class="slide">
+						<img src="images/open-phone.jpg" alt="An open phone">
+					</div>
+
+					<!-- Image 3 -->
+					<div class="slide">
+						<img src="images/phone-repair.png" alt="A phone being fixed">
+					</div>
+
+					<!-- Image 4 -->
+					<div class="slide">
+						<img src="images/battery-rpcmt.jpg" alt="A phone's battery, in need of replacing">
+					</div>
+
+					<!-- Image 5 -->
+					<div class="slide">
+						<img src="images/broken-screen.jpg" alt="A broken phone screen">
+					</div>
+
+					<!-- Image 6 -->
+					<div class="slide">
+						<img src="images/battery-rpcmt3.jpg" alt="An old VS. new battery">
+					</div>
+				</div>
+			</div>
+
+			<!-- Navigation Bar -->
+			<div id="navigation">
+				<label for="r1" class="bar"></label>
+				<label for="r2" class="bar"></label>
+				<label for="r3" class="bar"></label>
+				<label for="r4" class="bar"></label>
+				<label for="r5" class="bar"></label>
+				<label for="r6" class="bar"></label>
+			</div>
+		</main>
+
+		<!-- Footer Content -->
+		<footer>
+			<div id="footer-height-align">
+				<div id="footer">
+
+					<!-- Crack N' Fix Logo -->
+					<div id="footer-logo" id="footer-item">
+						<a href="index.html "><img src="images/logo.png" alt="Crack N' Fix Logo"></a>
+						<p>Crack N' Fix brings quality and reliability! 🚀 From iPhones to laptops, we're here to fix it all. Fast. Reliable. Convenient.</p>
+					</div>
+
+					<!-- Social Media Icons and Links -->
+					<div id="footer-social-nav" id="footer-item">
+						<ul>
+							<li><a target="_blank" href="https://instagram.com"><img src="images/social_instagram_icon.png" alt="instagram"><p>Instagram</p></a></li>
+							<li><a target="_blank" href="https://facebook.com"><img src="images/social_fb_icon.png" alt="facebook"><p>Facebook</p></a></li>
+							<li><a target="_blank" href="https://whatsapp.com"><img src="images/social_whatsapp_icon.png" alt="whatsapp"><p>WhatsApp</p></a></li>
+							<li><a target="_blank" href="mailto:contactus@cracknfix.com"><img src="images/email_icon.png" alt="google maps"><p>contactus@cracknfix.com</p></a></li>
+						</ul>
+					</div>
+
+					<!-- Map Pin for Location -->
+					<div id="location" id="footer-item">
+						<a target="_blank" href="https://google.com/maps"><img src="images/map_pin_icon.png" alt="map location"></a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Copyright Information -->
+			<div id="copyright">
+				<p>Crack N' Fix &copy; Copyright 2023. All Rights Reserved.</p>
+			</div>
+		</footer>
+	</body>
+</html>

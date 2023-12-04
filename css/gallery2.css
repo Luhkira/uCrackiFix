@@ -1,0 +1,104 @@
+/*
+ * File Name:	gallery-styles.css
+ * Names:		Adrian Perez Rosado, Lucas Kizirian Rangel
+ * Course:		COP 2822C at Valencia College
+ * Professor:	David Stendel 
+ * Description:	This is the CSS file for the slideshow gallery page.
+ * Date:		12/04/2023
+ */
+
+/* Style Rules for Gallery Page */
+
+/* Style Rules for Mobile Viewport */
+/* Style Rules for Main */
+main {
+	padding: 4em;
+}
+
+/* Style Rules for Slideshow Outer Container */
+#slidershow {
+	margin: auto;
+    border-radius: 1rem;
+	overflow: hidden;
+	max-width: 700px;
+}
+
+/* Style Rules for Slides Container */
+#slides {
+	display: flex;
+	width: 600%;
+	height: 100%;
+}
+
+/* Style Rules for Hidden Input Buttons */
+input[name="r"] {
+	position: absolute;
+	visibility: hidden;
+}
+
+#r1:checked ~ .s1 {
+	margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+	margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+	margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+	margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+	margin-left: -80%;
+}
+
+#r6:checked ~ .s1 {
+	margin-left: -100%;
+}
+
+/* Style Rules for Slide Class and Image */
+.slide {
+	width: 20%;
+	transition: 0.6s;
+}
+
+.slide img {
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+}
+
+/* Style Rules for Navigation Bar */
+#navigation {
+	display: flex;
+	margin: auto;
+	padding: 1.5em;
+	justify-content: space-evenly;
+	max-width: 265px;
+}
+
+.bar {
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	background-color: #009FD9;
+	transition: opacity ease 350ms;
+	cursor: pointer;
+}
+
+.bar:hover {
+	opacity: 0.5;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+	
+	/* Tablet Viewport: Style Rules for Slideshow Outer Container */
+	#slidershow {
+		aspect-ratio: 16 / 9;
+	}
+}
