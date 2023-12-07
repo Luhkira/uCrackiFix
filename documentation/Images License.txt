@@ -1,0 +1,11 @@
+All the images utilized in this project have been sourced from 2 websites.
+
+1. www.istockphoto.com provides a free trial that allows users to download 10 images for free.
+Free trial link: https://www.istockphoto.com/plans-and-pricing/free-trial-subscription
+
+
+2. www.unsplash.com provides free images for users to download.
+Their longform license states:
+"Unsplash grants you an irrevocable, nonexclusive, worldwide copyright license to download, copy, modify, distribute, perform, and use photos from Unsplash for free, including for commercial purposes, without permission from or attributing the photographer or Unsplash. This license does not include the right to compile photos from Unsplash to replicate a similar or competing service."
+unsplash.com license information: https://unsplash.com/license
+
