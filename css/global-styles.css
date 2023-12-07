@@ -75,6 +75,10 @@ nav ul li a:hover {
 	color: #009FD9;
 }
 
+#current-page {
+	color: #009FD9;
+}
+
 /* Style Rules for Main Content */
 main {
 	color: #323232;
